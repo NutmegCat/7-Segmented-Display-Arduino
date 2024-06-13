@@ -5,3 +5,5 @@ This program was written for TEJ4M1. It was used to cycle through hex numbers fr
 June 13th, 2024
 
 Aaron Prince Anu
+
+  *<sub>Note: This program can only be ran on the arduino ide since it has some required libraries.</sub>*

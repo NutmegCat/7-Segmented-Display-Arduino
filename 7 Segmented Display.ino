@@ -1,6 +1,12 @@
+/*
+The following program displays characters 1 - F in ascending and descending order. 
+It works by turning on and off certain segments of the display.
+The code first runs through characters 1 - F and F - 1, then loops back to the top.
+*/
+
 void setup() 
 {
-    // Set pins 2 to 8 as outputs
+    // Set pins 2 through 8 as outputs
     pinMode(2, OUTPUT);
     pinMode(3, OUTPUT);
     pinMode(4, OUTPUT);
@@ -184,8 +190,6 @@ void loop()
     digitalWrite(8, LOW);
     delay(1000);
 
-    // Descending Order
-
     // Blank display
     digitalWrite(2, LOW);
     digitalWrite(3, LOW);
@@ -195,6 +199,8 @@ void loop()
     digitalWrite(7, LOW);
     digitalWrite(8, LOW);
     delay(2000);
+
+    // Descending Order
 
     // Displaying F
     digitalWrite(2, LOW);
@@ -355,4 +361,6 @@ void loop()
     digitalWrite(7, HIGH);
     digitalWrite(8, HIGH);
     delay(1000);
+
+    // The code will then loop back to the top
 }

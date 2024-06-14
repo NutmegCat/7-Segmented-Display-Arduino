@@ -1,4 +1,4 @@
-// Pin connections for common cathode 7-segment display 
+// Pin connections for common anode 7-segment display 
 const int segmentPins[] = {2, 3, 4, 5, 6, 7, 8, G};
 
 void setup() {
@@ -35,7 +35,7 @@ void displayHexDescending() {
 
 // Function to display a single hexadecimal digit
 void displayHexDigit(int digit) {
-    // Hexadecimal values for common cathode 7-segment display
+    // Hexadecimal values for common anode 7-segment display
     const int hexValues[][8] = {
         {1, 1, 1, 1, 1, 1, 0, 0}, // 0
         {0, 1, 1, 0, 0, 0, 0, 0}, // 1

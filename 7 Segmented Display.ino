@@ -1,5 +1,5 @@
 // Pin connections for common anode 7-segment display 
-const int segmentPins[] = {2, 3, 4, 5, 6, 7, 8, G};
+const int segmentPins[] = {2, 3, 4, 5, 6, 7, 8, 9};
 
 void setup() {
     // Set segment pins as OUTPUT 
@@ -46,7 +46,7 @@ void displayHexDigit(int digit) {
         {1, 0, 1, 1, 1, 1, 1, 0}, // 6
         {1, 1, 1, 0, 0, 0, 0, 0}, // 7
         {1, 1, 1, 1, 1, 1, 1, 0}, // 8
-        {1, 1, 1, 1, 0, 1, 1, 0}, // G
+        {1, 1, 1, 1, 0, 1, 1, 0}, // 9
         {1, 1, 1, 0, 1, 1, 1, 0}, // A
         {0, 0, 1, 1, 1, 1, 1, 0}, // B
         {1, 0, 0, 1, 1, 1, 0, 0}, // C
